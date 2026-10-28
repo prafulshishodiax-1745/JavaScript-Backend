@@ -8,7 +8,9 @@ app.get('/', (req, res) => {
 app.get('/twitter',(req,res) => {
     res.send("<h1>Twitter<h1>")
 })
-
+app.get('/login',(req,res) => {
+  res.send("login page")
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
